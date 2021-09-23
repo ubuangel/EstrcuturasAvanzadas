@@ -78,36 +78,20 @@ int main(){
 				
 				sumaAl3=sumaAl3-h3[ci3];
 				ci3++;
+			}else{
+				
+				if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3 || (sumaAl2==0 && sumaAl1 && sumaAl3) )
+					{
+						mismaaltura=true;
+					}
+				}
 			}
+		
+		
+		
+	
+	
 		}
-		
-		
-		if(suma1 < suma2 && suma1 < suma3){
- 			
- 			  h1.pop_back();
- 			  suma1=suma1-h1[tam1-2];
- 			  if(suma1==suma2 && suma2==suma3)
- 			  	cout<<suma1<<" ";//return 
-   		 }else{
-      		  if(suma2 < suma1 && suma2 < suma3){
-      		  	h2.pop_back();
-      		  	suma2=suma2-h2[tam2-2];
- 			  if(suma1==suma2 && suma2==suma3)
- 			  	cout<<suma2<<" ";
-       			 
-       		 }else{
-        		h3.pop_back();
-      		  	suma3=suma3-h3[tam3-2];
- 			  if(suma1==suma2 && suma2==suma3)
- 			  	cout<<suma3<<" ";
-        }
-    }
-//		escogemos el menor suma y sacamos un cilindro comparamos luego 
-//		
-//		sino escogemos el segundo y sacamos el cilindro y comparamos sino el tercero sacamos el cilindro y comparamos 
-		
-		//luego se repite todos con un cilindro menos 
-	}
-	
-	
+			cout<<sumaAl1;
+
 }
