@@ -15,39 +15,45 @@ using namespace std;
 
 int main(){
 	
-	vector<int> h1;
+	
+	
+	int tam1,tam2,tam3;
+	cin>>tam1>>tam2>>tam3;
+	
+	vector<int>h1;
 	vector<int>h2;
 	vector<int>h3;
 	
-	int tam1,tam2,tam3,i=0;
-	cin>>tam1>>tam2>>tam3;
 	int sumaAl1=0,sumaAl2=0,sumaAl3=0;
 	
-	int a,b,c;
+	int a ,b,c;
 	
+	int i=0;
 	while (i<tam1)
-	{
+		{
+		//cin>>h1[i];
 		cin>>a;
 		h1.push_back(a);
 		sumaAl1=sumaAl1+a;
 		i++;
-	}
+		}
 	
 	i=0;
 	while (i<tam2)
 		{
 			cin>>b;
+			//cin>>h2[i];
 			h2.push_back(b);
 			sumaAl2=sumaAl2+b;
 			i++;
 		}
 		
 	i=0;
-		while (i<tam3)
-	{
-		
+	while (i<tam3)
+		{	
 		cin>>c;
-			h3.push_back(c);
+		//cin>>h3[i];
+		h3.push_back(c);
 		
 		sumaAl3=sumaAl3+c;
 		i++;
@@ -56,13 +62,15 @@ int main(){
 	
 	bool mismaaltura=false;
 	
-	int ci1=0,ci2=0,ci3=0;//indice del cilindro a quitar
+	
 	
 	if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3)
 	{
 		
 		mismaaltura=true;	
-	}else{
+	}
+	
+	int ci1=0,ci2=0,ci3=0;//indice del cilindro a quitar
 		
 		while (!mismaaltura)
 		{
@@ -78,20 +86,18 @@ int main(){
 				
 				sumaAl3=sumaAl3-h3[ci3];
 				ci3++;
-			}else{
+			}
 				
-				if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3 || (sumaAl2==0 && sumaAl1==0 && sumaAl3==0) )
+				if ((sumaAl1==sumaAl2 && sumaAl2==sumaAl3) || (sumaAl2==0 && sumaAl1==0 && sumaAl3==0) )
 					{
 						mismaaltura=true;
 					}
-				}
+				
 			}
 		
 		
+	
 		
-	
-	
-		}
 			cout<<sumaAl1;
 
 }
