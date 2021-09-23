@@ -80,7 +80,7 @@ int main(){
 				ci3++;
 			}else{
 				
-				if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3 || (sumaAl2==0 && sumaAl1 && sumaAl3) )
+				if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3 || (sumaAl2==0 && sumaAl1==0 && sumaAl3==0) )
 					{
 						mismaaltura=true;
 					}
