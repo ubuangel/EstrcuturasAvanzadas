@@ -21,15 +21,15 @@ int main(){
 	
 	int tam1,tam2,tam3,i=0;
 	cin>>tam1>>tam2>>tam3;
-	int al1=0,al2=0,al3=0;
-	int suma1=0,suma2=0,suma3=0;
+	int sumaAl1=0,sumaAl2=0,sumaAl3=0;
+	
 	int a,b,c;
 	
 	while (i<tam1)
 	{
 		cin>>a;
 		h1.push_back(a);
-		suma1=suma1+a;
+		sumaAl1=sumaAl1+a;
 		i++;
 	}
 	
@@ -38,7 +38,7 @@ int main(){
 		{
 			cin>>b;
 			h2.push_back(b);
-			suma2=suma2+b;
+			sumaAl2=sumaAl2+b;
 			i++;
 		}
 		
@@ -49,16 +49,37 @@ int main(){
 		cin>>c;
 			h3.push_back(c);
 		
-		suma3=suma3+c;
+		sumaAl3=sumaAl3+c;
 		i++;
 	}
 	
 	
-	if (suma1==suma2 && suma2==suma3)
+	bool mismaaltura=false;
+	
+	int ci1=0,ci2=0,ci3=0;//indice del cilindro a quitar
+	
+	if (sumaAl1==sumaAl2 && sumaAl2==sumaAl3)
 	{
 		
-		cout<<suma1;	
+		mismaaltura=true;	
 	}else{
+		
+		while (!mismaaltura)
+		{
+			if (sumaAl1>=sumaAl2 && sumaAl1>= sumaAl3)
+			{
+				sumaAl1=sumaAl1-h1[ci1]	;
+				ci1++;
+			}else if (sumaAl2>=sumaAl1 && sumaAl2>= sumaAl3){
+				
+				sumaAl2=sumaAl2-h2[ci2];
+				ci2++;
+			}else if(sumaAl3>=sumaAl1 && sumaAl3>=sumaAl2){
+				
+				sumaAl3=sumaAl3-h3[ci3];
+				ci3++;
+			}
+		}
 		
 		
 		if(suma1 < suma2 && suma1 < suma3){
