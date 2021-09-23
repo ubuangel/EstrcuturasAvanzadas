@@ -18,8 +18,10 @@ int main(){
 	vector<int> h1;
 	vector<int>h2;
 	vector<int>h3;
+	
 	int tam1,tam2,tam3,i=0;
 	cin>>tam1>>tam2>>tam3;
+	int al1=0,al2=0,al3=0;
 	int suma1=0,suma2=0,suma3=0;
 	int a,b,c;
 	
