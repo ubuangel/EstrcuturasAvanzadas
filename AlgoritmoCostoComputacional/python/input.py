@@ -1,3 +1,6 @@
+import time
+from random import choice
+
 def mimodulo(myFn, startN=10, endN=100, stepSize=10, numTrials=20, listMax = 10):
     nValues = []
     tValues = []
@@ -15,7 +18,7 @@ def mimodulo(myFn, startN=10, endN=100, stepSize=10, numTrials=20, listMax = 10)
         nValues.append(n)
         tValues.append(runtime)
 
-    with open("inputs/"+"entrada", 'w') as f:
+    with open("inputs/"+"entrada2", 'w') as f:
 
         for item in lst:
             f.write("%s " % item)    
