@@ -43,28 +43,26 @@
 
 %% Aquí podemos añadir un resumen del trabajo (o del artículo en su caso) 
 \begin{abstract}
-Esta es una plantilla simple para crear un articulo \LaTeX en español, con algunos comandos que se usarán frecuentemente para hacer tareas de la licenciatura en Física.
+El trabajo consiste en un análisis del rendimiento de un conjunto de algoritmos en función de su tiempo de ejecución con diferentes conjuntos de datos tanto para c++ como para Python.
+Se  prueban, comparan y concluye qué algoritmo es mejor para conjuntos de datos pequeños, promedio, veremos el peor caso, caso promedio y mejor.
+
 \end{abstract}
 
 %% Iniciamos "secciones" que servirán como subtítulos
 %% Nota que hay otra manera de añadir acentos
 \section{Introducci\'on}
 
-¡Tu introducción va aquí! A continuación, se enumeran algunos ejemplos de comandos y funciones de uso común para ayudarte a comenzar.
+La ordenación es una de las cuestiones importantes  en computación  el problema de ordenación es importante porque de eso depende otros algoritmos los que los hacen mas o menos eficientes uno de de estos algoritmos es el algoritmo de búsqueda .
 
-cuaderno de trabajo\cite{colab}
-
-\begin{enumerate}[a)]
-\item
-\item
-\item
-
-
-\end{enumerate}
+El concepto clave  es algoritmo ,un algoritmo se puede definir como una  secuencia de  pasos   bien definidos para resolver un problemas . El algoritmo toma una entrada y proporciona una salida.\cite{5376871}
+Se han propuesto varios algoritmos de ordenación con diferentes restricciones, p. Ej. número de iteraciones (bucle interno, bucle externo), complejidad y problema de consumo de CPU.
 
 
 
-\subsection{Implemente los siguientes algoritmos en tres lenguajes de programación}
+
+
+
+
 
 
 
@@ -72,11 +70,60 @@ cuaderno de trabajo\cite{colab}
 
 \section{Marco Teórico}
 
-\section{Metodología}
+Los algoritmos de ordenamiento se dividen en dos categorías bien diferenciadas:el Bubble Sort, Insertion Sort ,y Selection Sort en la categoría de O(n2), mientras que Quick Sort  y Merge Sort  
+O(n log n).La descripción de cada uno de ellos a continuación.
 
 \begin{enumerate}[a)]
 
-\item Bubble sort
+\item \textbf{Bubble sort:}
+El algoritmo de ordenacion básico es la clasificación de burbujas. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de ordenación  por comparación.Una de sus ventajas es sus facil  implementacion 
+
+\item \textbf{Heap sort:}
+
+\item \textbf{Insertion sort}
+
+\item \textbf{ Shell sort}
+
+\item \textbf{Merge sort}
+
+Este es un algoritmo de divide y conquista, con la ventaja  de fusionar listas con nuevas listas ordenadas. La complejidad del peor caso de la ordenación por fusión es O (nlog n), ya que podría usarse para conjuntos de datos grandes y peores. 
+La ordenación por fusión utiliza los siguientes tres pasos \cite{merge} 
+
+\begin{enumerate}[1)]
+\item \textbf{Divide:}Si el tamaño de la matriz es mayor que 1, divídalo en dos subarreglos iguales de la mitad del tamaño.
+\item \textbf{Conquista:} ordenar ambas subarreglos por recursividad
+\item \textbf{Fusiona:} Combine ambas arreglos ordenadas en uno de tamaño original. Esto le dará un arreglo ordenada completo.
+
+
+\end{enumerate}
+
+
+
+ La ordenación por fusión es más adecuada para casos grandes y peores, pero usa más memoria en comparación con otros algoritmos de división y conquista. El algoritmo de clasificación de fusión se describe a continuación
+
+\item \textbf{Quick sort}
+
+
+\end{enumerate}
+
+
+3.1 Clasificación de burbujas: el algoritmo de clasificación básico es la clasificación de burbujas. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de clasificación por comparación [7]. El tipo de burbuja original lo hace 
+
+
+\section{Metodología}
+
+Lo que se hizo fue probar los algoritmos de ordenamiento  en Python 
+utilizando Google colab y el entorno de ejecución GPU. La maquina que nos asigno google fue una Tesla k80 se intento reiniciar el entono para obtener una tesla t 40 , pero fue inútil.
+
+Para la pruebas en c++
+La computadora  que utilizo es una intel i5 de quinta generación  con 2 cores ,8 gb  de memoria ram 
+
+Los algoritmos escogidos son los siguientes:
+
+\begin{itemize}
+
+
+\item  Bubble sort
 
 \item Heap sort
 
@@ -89,7 +136,19 @@ cuaderno de trabajo\cite{colab}
 \item  Merge sort
 
 \item Quick sort
-\end{enumerate}
+
+como datos de entrada usaremos libreoffice para graficar los resultados 
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\section{Resultados}
 
 
 \begin{figure}[H]%primero aqui sino arriba sino abajo
@@ -118,8 +177,9 @@ cuaderno de trabajo\cite{colab}
 \end{figure}
 
 
+cuaderno de trabajo
+\cite{colab}
 
-\section{Resultados}
 
 \section{Conclusiones}
 
