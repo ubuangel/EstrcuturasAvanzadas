@@ -12,7 +12,7 @@
 % Esto es para poder escribir acentos directamente:
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
+\usepackage{float}
 
 \usepackage{enumerate} 
 
@@ -52,10 +52,15 @@ Esta es una plantilla simple para crear un articulo \LaTeX en español, con algu
 
 ¡Tu introducción va aquí! A continuación, se enumeran algunos ejemplos de comandos y funciones de uso común para ayudarte a comenzar.
 
+cuaderno de trabajo\cite{colab}
+
+\begin{enumerate}[a)]
+\item
+\item
+\item
 
 
-
-
+\end{enumerate}
 
 
 
@@ -85,6 +90,33 @@ Esta es una plantilla simple para crear un articulo \LaTeX en español, con algu
 
 \item Quick sort
 \end{enumerate}
+
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=10cm]{imagenes/arq2.png}
+\caption{}
+\end{figure}
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=7cm]{imagenes/arquitectura2.png}
+\caption{}
+\end{figure}
+
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=14cm]{imagenes/cap.png}
+\caption{}
+\end{figure}
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=13cm]{imagenes/cpus.png}
+\caption{}
+\end{figure}
+
 
 
 \section{Resultados}
