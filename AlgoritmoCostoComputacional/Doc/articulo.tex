@@ -144,9 +144,20 @@ Los algoritmos escogidos son los siguientes:
 
 \item Quick sort
 
-como datos de entrada usaremos libreoffice para graficar los resultados 
-
 \end{itemize}
+
+Como datos de entrada usaremos libreoffice para graficar los resultados.
+
+Con  respecto a la ejecución de los algoritmos de python  en Google Colab el proceso tardo mas de 8 horas en terminar de ejecutarse se hizo la prueba en mi pc y tardo 1 hora  menos ,al ordenar 1000 000 elementos de un arreglo.
+
+En el lenguaje de c se hizo una prueba con 100000 elementos 
+
+En el lenguaje de c++ se hizo una prueba con 100000 elementos 
+
+en c se hizo una prueba de 1000 001 de elementos 
+
+
+
 
 
 
@@ -161,26 +172,26 @@ como datos de entrada usaremos libreoffice para graficar los resultados
 \begin{figure}[H]%primero aqui sino arriba sino abajo
 \centering
 \includegraphics[width=10cm]{imagenes/arq2.png}
-\caption{}
+\caption{Gpu TeslaK80}
 \end{figure}
 
 \begin{figure}[H]%primero aqui sino arriba sino abajo
 \centering
 \includegraphics[width=7cm]{imagenes/arquitectura2.png}
-\caption{}
+\caption{Especificaciones Entorno Colab}
 \end{figure}
 
 
 \begin{figure}[H]%primero aqui sino arriba sino abajo
 \centering
 \includegraphics[width=14cm]{imagenes/cap.png}
-\caption{}
+\caption{Momento ejecutar codigo en python }
 \end{figure}
 
 \begin{figure}[H]%primero aqui sino arriba sino abajo
 \centering
 \includegraphics[width=13cm]{imagenes/cpus.png}
-\caption{}
+\caption{Uso de una core al 100 por ciento}
 \end{figure}
 
 
@@ -192,11 +203,21 @@ cuaderno de trabajo
 
 \centering
 \includegraphics[width=10cm]{imagenes/t100milc.png}
-\caption{}
+\caption{Ejecutado en c con 100 mil elementos aleatorios}
+
+\end{figure}
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+
+\centering
+\includegraphics[width=10cm]{imagenes/millon.png}
+\caption{Con 1 millon de elementos}
 
 \end{figure}
 \section{Conclusiones}
-Es importante establecer el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n
+
+
+Es importante establecer el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios (intercalación) que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n
 intercambios. La ordenación por inserción, por otro lado, realiza al menos un cambio por iteración, ya que debe realizar cambios para eliminar cada elemento evaluado.
 
 La ordenación por inserción, por otro lado, realiza menos comparaciones que la ordenación por selección, ya que el elemento que se va a insertar de forma ordenada no siempre tiene que llegar hasta el final. De hecho, esto solo ocurre en el peor de los casos, donde la matriz se ordena en orden inverso. La clasificación por selección necesita comparar todos los elementos restantes cada vez para determinar quién es el más pequeño.
@@ -208,6 +229,9 @@ En teoría, ambos pertenecen a la misma clase de complejidad, a saber, O ($n^{2}
 Finalmente, la clasificación por selección no se considera un algoritmo eficiente para entradas grandes. Hay alternativas O (nlogn)
 , como Quick Sort y Merge Sort, así como alternativas lineales como Counting Sort. 
 
+
+La ordenación por fusión o Merge Sort es más adecuada para casos grandes y peores, pero usa más memoria en comparación con otros algoritmos de división y conquista.
+
 \cite{rin}
 
 La complejidad de Quick Sort en los casos mejores y medios  es O(nlogn) y en el peor de los casos O( $n^{2}$)  . La complejidad media del tiempo de caso es O(nlogn) que es un poco costosa si se utiliza para grandes conjuntos de datos, también en el peor de los casos la complejidad es O($n^{2}$), lo que lo hace impráctico para los peores conjuntos de datos grandes.
@@ -216,8 +240,6 @@ La complejidad de Quick Sort en los casos mejores y medios  es O(nlogn) y en el 
 
 
 
-Documentar sus hallazgos en un formato de artículo de investigación (formato de libre elección), considerando
-aspectos del marco teórico (estado del arte), metodología, resultados, conclusiones, discusión y bibliografía \cite{fager}.
 
 \bibliographystyle{plain}
 \bibliography{referencias}
