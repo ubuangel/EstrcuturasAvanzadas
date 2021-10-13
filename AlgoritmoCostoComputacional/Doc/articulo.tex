@@ -75,11 +75,13 @@ O(n log n).La descripción de cada uno de ellos a continuación.
 
 \begin{enumerate}[a)]
 
-\item \textbf{Bubble sort:}
-El algoritmo de ordenacion básico es la clasificación de burbujas. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de ordenación  por comparación.Una de sus ventajas es sus facil  implementacion 
+\item \textbf{Bubble sort}
 
-\item \textbf{Heap sort:}
-La ordenacion de montón es una técnica de clasificación basada en comparaciones basada en la estructura de datos binary heap. Es similar a ordenamiento por selección donde primero encontramos el elemento mínimo y colocamos el elemento mínimo al principio. Repetimos el mismo proceso para el resto de elementos\cite{heap}.
+El algoritmo de ordenación básico es Bubble Sort. Compara dos elementos adyacentes y realiza una operación de intercambio . Esto también se denomina algoritmo de ordenación  por comparación.Una de sus ventajas es sus fácil  implementación .
+
+\item \textbf{Heap sort}
+
+La ordenacion de montón en español , es una técnica de ordenación basada en comparaciones ,basada en la estructura de datos binary heap. Es similar a ordenamiento por selección donde primero encontramos el elemento mínimo y colocamos el elemento mínimo al principio. Repetimos el mismo proceso para el resto de elementos\cite{heap}.
 
 \item \textbf{Insertion sort}
 \\
@@ -106,15 +108,19 @@ La ordenación por fusión utiliza los siguientes tres pasos \cite{merge}
 
 
 
- La ordenación por fusión es más adecuada para casos grandes y peores, pero usa más memoria en comparación con otros algoritmos de división y conquista. El algoritmo de clasificación de fusión se describe a continuación
+ Merge Sort es más adecuada para entradas grandes ,pero usa más memoria en comparación con otros algoritmos de divide y conquista.
 
 \item \textbf{Quick sort}
+
+Este método es una mejora sustancial del método de intercambio directo y recibe el nombre de Quick Sort, por la velocidad con la que ordena los elementos del arreglo.
+Quicksort es un algoritmo basado en la técnica de divide y vencerás, que permite, en promedio, ordenar n elementos en un tiempo proporcional a n log n.
+
+
 
 
 \end{enumerate}
 
 
- Ordenación de burbujas: El algoritmo de ordenación básico es Bubble Sort. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de clasificación por comparación . El tipo de burbuja original lo hace 
 
 
 \section{Metodología}
@@ -237,15 +243,13 @@ La ejecución de los algoritmos de python  en Google Colab el proceso tardo mas 
 
 El lenguaje de programación c++ el mas optimo  en la ordenación a diferencia de python en c++ utilizo  1 hora con 57 minutos  siendo el algoritmo que tomo mas tiempo Bubble Sort y el de menor Quick sort,En  python tardo 7 horas aproximadamente.
 
-Es importante darse cuenta  que la toma de tiempo extra en python se debido gran medida a la creación de un archivo con los elementos de entrada  ,el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios (intercalación) que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n intercambios. La ordenación por inserción, por otro lado, realiza al menos un cambio por iteración, ya que debe realizar cambios para eliminar cada elemento evaluado.
+Es importante darse cuenta  que la toma de tiempo extra en python se debido gran medida a la creación de un archivo con los elementos de entrada . El ordenamiento por  selección realiza menos cambios (intercalación) que la inserción, ya que solo hay un cambio por iteración, es decir, en el Selection Sort   hace n intercambios en total. 
 
-La ordenación por inserción, por otro lado, realiza menos comparaciones que la ordenación por selección, ya que el elemento que se va a insertar de forma ordenada no siempre tiene que llegar hasta el final. De hecho, esto solo ocurre en el peor de los casos, donde la matriz se ordena en orden inverso. La clasificación por selección necesita comparar todos los elementos restantes cada vez para determinar quién es el más pequeño.
+La ordenación por inserción, por otro lado, realiza menos comparaciones que la ordenación por selección, ya que el elemento que se va a insertar de forma ordenada no siempre tiene que llegar hasta el final. De hecho, esto solo ocurre en el peor de los casos, donde la matriz se ordena en orden inverso. La ordenación por selección necesita comparar todos los elementos restantes cada vez para determinar quién es el más pequeño.
 
-En teoría, ambos pertenecen a la misma clase de complejidad, a saber, O ($n^{2}$).
+En teoría, ambos pertenecen a la misma clase de complejidad, O ($n^{2}$).En la práctica, la ordenación por inserción funciona mejor que la ordenación por selección.
 
-. En la práctica, la ordenación por inserción funciona mejor que la ordenación por selección.
-
-Finalmente, la clasificación por selección no se considera un algoritmo eficiente para entradas grandes. Hay alternativas O (nlogn)
+Finalmente, la ordenación por selección no se considera un algoritmo eficiente para entradas grandes. Hay alternativas O (nlogn)
 , como Quick Sort y Merge Sort, así como alternativas lineales como Counting Sort. 
 
 
