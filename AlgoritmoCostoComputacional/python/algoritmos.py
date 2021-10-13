@@ -56,9 +56,9 @@ InsertionSort(A)
 print(A)
 
 
-n_values_merge,t_values_merge=mimodulo(mergesort,1,1000000,1,numTrials=1,listMax=2000000)
+n_values_merge,t_values_merge=mimodulo(mergesort,1,1000,1,numTrials=1,listMax=10000)
 
-n_values_insertion,t_values_insertion=mimodulo(InsertionSort,1,1000000,1,numTrials=1,listMax=2000000)
+n_values_insertion,t_values_insertion=mimodulo(InsertionSort,1,1000,1,numTrials=1,listMax=10000)
 
 plt.plot(n_values_merge,t_values_merge,color="green",label="mergesort")
 plt.plot(n_values_insertion,t_values_insertion,color="blue",label="insertion")
