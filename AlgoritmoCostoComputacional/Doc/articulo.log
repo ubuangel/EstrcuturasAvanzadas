@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.9.18)  12 OCT 2021 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.9.18)  12 OCT 2021 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -640,10 +640,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (./articulo.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 )
 \openout1 = `articulo.aux'.
 
@@ -762,66 +762,64 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Citation `merge' on page 1 undefined on input line 90.
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<imagenes/arq2.png, id=77, 682.55pt x 290.08376pt>
+<imagenes/arq2.png, id=81, 682.55pt x 290.08376pt>
 File: imagenes/arq2.png Graphic file (type png)
 <use imagenes/arq2.png>
-Package pdftex.def Info: imagenes/arq2.png  used on input line 156.
+Package pdftex.def Info: imagenes/arq2.png  used on input line 163.
 (pdftex.def)             Requested size: 284.52756pt x 120.92694pt.
-<imagenes/arquitectura2.png, id=79, 485.815pt x 428.60126pt>
+ [2]
+<imagenes/arquitectura2.png, id=94, 485.815pt x 428.60126pt>
 File: imagenes/arquitectura2.png Graphic file (type png)
 <use imagenes/arquitectura2.png>
-Package pdftex.def Info: imagenes/arquitectura2.png  used on input line 162.
+Package pdftex.def Info: imagenes/arquitectura2.png  used on input line 169.
 (pdftex.def)             Requested size: 199.16928pt x 175.70802pt.
- [2 <./imagenes/arq2.png>]
-<imagenes/cap.png, id=87, 766.36313pt x 494.59781pt>
+<imagenes/cap.png, id=95, 766.36313pt x 494.59781pt>
 File: imagenes/cap.png Graphic file (type png)
 <use imagenes/cap.png>
-Package pdftex.def Info: imagenes/cap.png  used on input line 169.
+Package pdftex.def Info: imagenes/cap.png  used on input line 176.
 (pdftex.def)             Requested size: 398.33858pt x 257.08667pt.
-<imagenes/cpus.png, id=88, 937.5025pt x 444.66125pt>
+<imagenes/cpus.png, id=96, 937.5025pt x 444.66125pt>
 File: imagenes/cpus.png Graphic file (type png)
 <use imagenes/cpus.png>
-Package pdftex.def Info: imagenes/cpus.png  used on input line 175.
+Package pdftex.def Info: imagenes/cpus.png  used on input line 182.
 (pdftex.def)             Requested size: 369.88582pt x 175.43233pt.
- [3 <./imagenes/arquitectura2.png> <./imagenes/cap.png>] (./articulo.bbl
+ [3 <./imagenes/arq2.png> <./imagenes/arquitectura2.png> <./imagenes/cap.png>]
+<imagenes/t100milc.png, id=108, 485.815pt x 373.395pt>
+File: imagenes/t100milc.png Graphic file (type png)
+<use imagenes/t100milc.png>
+Package pdftex.def Info: imagenes/t100milc.png  used on input line 194.
+(pdftex.def)             Requested size: 284.52756pt x 218.68303pt.
+ [4 <./imagenes/cpus.png> <./imagenes/t100milc.png>] (./articulo.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [4 <./imagenes/cpus.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+)) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./articulo.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `articulo.out' has not changed.
 (rerunfilecheck)             Checksum: 26D80A3CE60C9A3ED4B1C5058BE29FE4;289.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 18140 strings out of 494385
- 334681 string characters out of 6172919
- 418062 words of memory out of 5000000
- 21442 multiletter control sequences out of 15000+600000
+ 18157 strings out of 494385
+ 334889 string characters out of 6172919
+ 418194 words of memory out of 5000000
+ 21451 multiletter control sequences out of 15000+600000
  17138 words of font info for 50 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 62i,7n,81p,472b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,81p,600b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600
 pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.60
 0pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.6
@@ -831,11 +829,12 @@ pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.60
 0.600pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm09
 00.600pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1
 200.600pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-1728.600pk>
-Output written on articulo.pdf (4 pages, 265059 bytes).
+1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on articulo.pdf (5 pages, 314787 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

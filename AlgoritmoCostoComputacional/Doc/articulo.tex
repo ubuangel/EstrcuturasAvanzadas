@@ -70,7 +70,7 @@ Se han propuesto varios algoritmos de ordenación con diferentes restricciones, 
 
 \section{Marco Teórico}
 
-Los algoritmos de ordenamiento se dividen en dos categorías bien diferenciadas:el Bubble Sort, Insertion Sort ,y Selection Sort en la categoría de O(n2), mientras que Quick Sort  y Merge Sort  
+Los algoritmos de ordenamiento se dividen en dos categorías bien diferenciadas:el Bubble Sort, Insertion Sort ,y Selection Sort en la categoría de O($n^{2}$), mientras que Quick Sort  y Merge Sort  
 O(n log n).La descripción de cada uno de ellos a continuación.
 
 \begin{enumerate}[a)]
@@ -79,10 +79,17 @@ O(n log n).La descripción de cada uno de ellos a continuación.
 El algoritmo de ordenacion básico es la clasificación de burbujas. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de ordenación  por comparación.Una de sus ventajas es sus facil  implementacion 
 
 \item \textbf{Heap sort:}
+La ordenacion de montón es una técnica de clasificación basada en comparaciones basada en la estructura de datos binary heap. Es similar a ordenamiento por selección donde primero encontramos el elemento mínimo y colocamos el elemento mínimo al principio. Repetimos el mismo proceso para el resto de elementos\cite{heap}.
 
 \item \textbf{Insertion sort}
+\\
+El ordenamiento por inserción (insertion sort en inglés) es una manera muy natural de ordenar para un ser humano, y puede usarse fácilmente para ordenar un mazo de cartas numeradas en forma arbitraria. Requiere O($n^{2}$) operaciones para ordenar una lista de  n elementos.
+
+Inicialmente se tiene un solo elemento, que obviamente es un conjunto ordenado. Después, cuando hay  k elementos ordenados de menor a mayor, se toma el elemento k+1 y se compara con todos los elementos ya ordenados, deteniéndose cuando se encuentra un elemento menor (todos los elementos mayores han sido desplazados una posición a la derecha) o cuando ya no se encuentran elementos (todos los elementos fueron desplazados y este es el más pequeño). En este punto se inserta el elemento k + 1 debiendo desplazarse los demás elementos\cite{inser}.
 
 \item \textbf{ Shell sort}
+
+ShellSort es principalmente una variación de Insertion Sort. En la ordenación por inserción, movemos los elementos solo una posición adelante. Cuando un elemento debe moverse mucho más adelante, se involucran muchos movimientos. La idea de shellSort es permitir el intercambio de elementos lejanos. En shellSort, hacemos que la matriz esté ordenada por h para un valor grande de h. Seguimos reduciendo el valor de h hasta que se convierte en 1. Se dice que una matriz está ordenada por h si todas las sublistas de cada elemento h están ordenadas\cite{shell}.
 
 \item \textbf{Merge sort}
 
@@ -181,8 +188,29 @@ cuaderno de trabajo
 \cite{colab}
 
 
-\section{Conclusiones}
+\begin{figure}[H]%primero aqui sino arriba sino abajo
 
+\centering
+\includegraphics[width=10cm]{imagenes/t100milc.png}
+\caption{}
+
+\end{figure}
+\section{Conclusiones}
+Es importante establecer el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n
+intercambios. La ordenación por inserción, por otro lado, realiza al menos un cambio por iteración, ya que debe realizar cambios para eliminar cada elemento evaluado.
+
+La ordenación por inserción, por otro lado, realiza menos comparaciones que la ordenación por selección, ya que el elemento que se va a insertar de forma ordenada no siempre tiene que llegar hasta el final. De hecho, esto solo ocurre en el peor de los casos, donde la matriz se ordena en orden inverso. La clasificación por selección necesita comparar todos los elementos restantes cada vez para determinar quién es el más pequeño.
+
+En teoría, ambos pertenecen a la misma clase de complejidad, a saber, O ($n^{2}$)
+
+. En la práctica, la ordenación por inserción funciona mejor que la ordenación por selección.
+
+Finalmente, la clasificación por selección no se considera un algoritmo eficiente para entradas grandes. Hay alternativas O (nlogn)
+, como Quick Sort y Merge Sort, así como alternativas lineales como Counting Sort. 
+
+\cite{rin}
+
+La complejidad de Quick Sort en los casos mejores y medios  es O(nlogn) y en el peor de los casos O( $n^{2}$)  . La complejidad media del tiempo de caso es O(nlogn) que es un poco costosa si se utiliza para grandes conjuntos de datos, también en el peor de los casos la complejidad es O($n^{2}$), lo que lo hace impráctico para los peores conjuntos de datos grandes.
 
 \section{Discusión}
 

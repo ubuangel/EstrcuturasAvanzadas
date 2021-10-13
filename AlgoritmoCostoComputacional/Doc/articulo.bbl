@@ -14,9 +14,40 @@ Varinder~Kumar Bansal, Rupesh Srivastava, and Pooja.
 \newblock In {\em 2009 International Conference on Advances in Computing,
   Control, and Telecommunication Technologies}, pages 34--36, 2009.
 
+\bibitem{rin}
+Arthur Brunet.
+\newblock {Estructura de datos}.
+\newblock \url{https://joaoarthurbm.github.io/eda/posts/selection-sort/}, 2021.
+\newblock [Online; accessed read].
+
 \bibitem{fager}
 Jose Fager.
 \newblock {\em Estructura de datos}.
 \newblock Proyecto Latin. latin, 2014.
+
+\bibitem{shell}
+geekforgeek.
+\newblock {geekforgeek}.
+\newblock \url{https://www.geeksforgeeks.org/shellsort/}, 2021.
+\newblock [Online; accessed read].
+
+\bibitem{heap}
+heapsort.
+\newblock {geekforgeek}.
+\newblock \url{https://www.geeksforgeeks.org/heap-sort/}, 2021.
+\newblock [Online; accessed read].
+
+\bibitem{inser}
+insertionsort.
+\newblock {wikipedia}.
+\newblock \url{https://es.wikipedia.org/wiki/Ordenamiento_por_inserci%C3%B3n},
+  2021.
+\newblock [Online; accessed read].
+
+\bibitem{merge}
+Wikipedia.
+\newblock {Definición de merge sort}.
+\newblock \url{https://es.wikipedia.org/wiki/Ordenamiento_por_mezcla}, 2021.
+\newblock [Online; accessed ].
 
 \end{thebibliography}
