@@ -43,7 +43,7 @@
 
 %% Aquí podemos añadir un resumen del trabajo (o del artículo en su caso) 
 \begin{abstract}
-El trabajo consiste en un análisis del rendimiento de un conjunto de algoritmos en función de su tiempo de ejecución con diferentes conjuntos de datos tanto para c++ como para Python.
+El trabajo consiste en un análisis del rendimiento de un conjunto de algoritmos en función de su tiempo de ejecución con diferentes conjuntos de datos tanto para c++ /c, como para Python.
 Se  prueban, comparan y concluye qué algoritmo es mejor para conjuntos de datos pequeños, promedio, veremos el peor caso, caso promedio y mejor.
 
 \end{abstract}
@@ -98,7 +98,7 @@ La ordenación por fusión utiliza los siguientes tres pasos \cite{merge}
 
 \begin{enumerate}[1)]
 \item \textbf{Divide:}Si el tamaño de la matriz es mayor que 1, divídalo en dos subarreglos iguales de la mitad del tamaño.
-\item \textbf{Conquista:} ordenar ambas subarreglos por recursividad
+\item \textbf{Conquista:} Ordenar ambas subarreglos por recursividad
 \item \textbf{Fusiona:} Combine ambas arreglos ordenadas en uno de tamaño original. Esto le dará un arreglo ordenada completo.
 
 
@@ -114,7 +114,7 @@ La ordenación por fusión utiliza los siguientes tres pasos \cite{merge}
 \end{enumerate}
 
 
-3.1 Clasificación de burbujas: el algoritmo de clasificación básico es la clasificación de burbujas. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de clasificación por comparación [7]. El tipo de burbuja original lo hace 
+ Ordenación de burbujas: El algoritmo de ordenación básico es Bubble Sort. Compara dos elementos adyacentes y realiza una operación de intercambio si se encuentra un pedido incorrecto con pasos repetidos. Esto también se denomina algoritmo de clasificación por comparación . El tipo de burbuja original lo hace 
 
 
 \section{Metodología}
@@ -146,23 +146,29 @@ Los algoritmos escogidos son los siguientes:
 
 \end{itemize}
 
-Como datos de entrada usaremos libreoffice para graficar los resultados.
-
-Con  respecto a la ejecución de los algoritmos de python  en Google Colab el proceso tardo mas de 8 horas en terminar de ejecutarse se hizo la prueba en mi pc y tardo 1 hora  menos ,al ordenar 1000 000 elementos de un arreglo.
-
-en python se hiso una prueba con 50 000 elementos
-
-En el lenguaje de c se hizo una prueba con 100000 elementos 
-
-En el lenguaje de c++ se hizo una prueba con 100000 elementos 
-
-en c se hizo una prueba de 1000 001 de elementos 
 
 
 
 
+En python se hizo una prueba con 5 000 elementos
+
+En el lenguaje de c se hizo una prueba con 50 000 elementos 
+
+En el lenguaje de c++ se hizo una prueba con 5 0000 elementos 
+
+Y finalmente se comparo el tiempo total que toma los algoritmos en c y python al tener una entrada de 1000 001 de elementos 
 
 
+
+
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+
+\centering
+\includegraphics[width=15cm]{imagenes/tabla.png}
+\caption{Tabla complejidades de algoritmos\cite{mas}}.
+
+\end{figure}
 
 
 
@@ -222,18 +228,20 @@ cuaderno de trabajo
 
 \centering
 \includegraphics[width=10cm]{imagenes/merge.png}
-\caption{Con 1 millon de elementos}
+\caption{Con 1000 elementos}
 
 \end{figure}
 \section{Conclusiones}
 
+La ejecución de los algoritmos de python  en Google Colab el proceso tardo mas de 8 horas, Al terminar de ejecutarse se hizo la prueba en la Pc y tardo 1 hora  menos ,al ordenar 1000 000 elementos de un arreglo.
 
-Es importante establecer el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios (intercalación) que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n
-intercambios. La ordenación por inserción, por otro lado, realiza al menos un cambio por iteración, ya que debe realizar cambios para eliminar cada elemento evaluado.
+El lenguaje de programación c++ el mas optimo  en la ordenación a diferencia de python en c++ utilizo  1 hora con 57 minutos  siendo el algoritmo que tomo mas tiempo Bubble Sort y el de menor Quick sort,En  python tardo 7 horas aproximadamente.
+
+Es importante darse cuenta  que la toma de tiempo extra en python se debido gran medida a la creación de un archivo con los elementos de entrada  ,el paralelismo entre el ordenamiento por selección y el ordenamiento por inserción. La selección realiza menos cambios (intercalación) que la inserción, ya que solo hay un cambio por iteración, es decir, en el orden de selección total hace n intercambios. La ordenación por inserción, por otro lado, realiza al menos un cambio por iteración, ya que debe realizar cambios para eliminar cada elemento evaluado.
 
 La ordenación por inserción, por otro lado, realiza menos comparaciones que la ordenación por selección, ya que el elemento que se va a insertar de forma ordenada no siempre tiene que llegar hasta el final. De hecho, esto solo ocurre en el peor de los casos, donde la matriz se ordena en orden inverso. La clasificación por selección necesita comparar todos los elementos restantes cada vez para determinar quién es el más pequeño.
 
-En teoría, ambos pertenecen a la misma clase de complejidad, a saber, O ($n^{2}$)
+En teoría, ambos pertenecen a la misma clase de complejidad, a saber, O ($n^{2}$).
 
 . En la práctica, la ordenación por inserción funciona mejor que la ordenación por selección.
 
@@ -250,6 +258,12 @@ La complejidad de Quick Sort en los casos mejores y medios  es O(nlogn) y en el 
 \section{Discusión}
 
 
+Algunos algoritmos de ordenacion son mejores para una entrada  pero no para otra. Quick sort es mejor para ordenar datos no ordenados (no necesariamente datos aleatorios). Bubble Sort , por ejemplo, puede superar Quick Sort cuando los datos están ordenados o casi ordenados. 
+
+De los algoritmos que comparten la misma clase de orden, es de considerar el valor de la constante de orden big-O. Aunque puede tener un tiempo cuadrático en el peor de los casos, Quicksort a menudo se considera el algoritmo más rápido en matrices aleatorias; la implicación es que tiene la constante de orden menor que, por ejemplo, Heapsort.
+
+
+El algoritmo Shellsort  utiliza los llamados incrementos de Hibbard. Aunque Shellsort no es teóricamente tan rápido como otros, sigue siendo comparable en velocidad cuando las matrices no son enormes y se emplean incrementos de ordenación mejorados.\cite{mas}.
 
 
 \bibliographystyle{plain}

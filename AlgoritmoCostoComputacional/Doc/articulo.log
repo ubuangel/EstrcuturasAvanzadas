@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.9.18)  12 OCT 2021 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.9.18)  13 OCT 2021 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,69 +765,76 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<imagenes/arq2.png, id=81, 682.55pt x 290.08376pt>
+<imagenes/tabla.png, id=81, 669.50125pt x 248.93pt>
+File: imagenes/tabla.png Graphic file (type png)
+<use imagenes/tabla.png>
+Package pdftex.def Info: imagenes/tabla.png  used on input line 168.
+(pdftex.def)             Requested size: 426.79134pt x 158.69171pt.
+ [2]
+<imagenes/arq2.png, id=95, 682.55pt x 290.08376pt>
 File: imagenes/arq2.png Graphic file (type png)
 <use imagenes/arq2.png>
-Package pdftex.def Info: imagenes/arq2.png  used on input line 176.
+Package pdftex.def Info: imagenes/arq2.png  used on input line 182.
 (pdftex.def)             Requested size: 284.52756pt x 120.92694pt.
- [2]
-<imagenes/arquitectura2.png, id=94, 485.815pt x 428.60126pt>
+<imagenes/arquitectura2.png, id=96, 485.815pt x 428.60126pt>
 File: imagenes/arquitectura2.png Graphic file (type png)
 <use imagenes/arquitectura2.png>
-Package pdftex.def Info: imagenes/arquitectura2.png  used on input line 182.
+Package pdftex.def Info: imagenes/arquitectura2.png  used on input line 188.
 (pdftex.def)             Requested size: 199.16928pt x 175.70802pt.
-<imagenes/cap.png, id=95, 766.36313pt x 494.59781pt>
+<imagenes/cap.png, id=97, 766.36313pt x 494.59781pt>
 File: imagenes/cap.png Graphic file (type png)
 <use imagenes/cap.png>
-Package pdftex.def Info: imagenes/cap.png  used on input line 189.
+Package pdftex.def Info: imagenes/cap.png  used on input line 195.
 (pdftex.def)             Requested size: 398.33858pt x 257.08667pt.
-<imagenes/cpus.png, id=96, 937.5025pt x 444.66125pt>
+ [3 <./imagenes/tabla.png> <./imagenes/arq2.png> <./imagenes/arquitectura2.png>
+]
+<imagenes/cpus.png, id=109, 937.5025pt x 444.66125pt>
 File: imagenes/cpus.png Graphic file (type png)
 <use imagenes/cpus.png>
-Package pdftex.def Info: imagenes/cpus.png  used on input line 195.
+Package pdftex.def Info: imagenes/cpus.png  used on input line 201.
 (pdftex.def)             Requested size: 369.88582pt x 175.43233pt.
- [3 <./imagenes/arq2.png> <./imagenes/arquitectura2.png> <./imagenes/cap.png>]
-<imagenes/t100milc.png, id=108, 485.815pt x 373.395pt>
+<imagenes/t100milc.png, id=111, 485.815pt x 373.395pt>
 File: imagenes/t100milc.png Graphic file (type png)
 <use imagenes/t100milc.png>
-Package pdftex.def Info: imagenes/t100milc.png  used on input line 207.
+Package pdftex.def Info: imagenes/t100milc.png  used on input line 213.
 (pdftex.def)             Requested size: 284.52756pt x 218.68303pt.
-<imagenes/millon.png, id=109, 511.9125pt x 352.31625pt>
+ [4 <./imagenes/cap.png> <./imagenes/cpus.png>]
+<imagenes/millon.png, id=121, 511.9125pt x 352.31625pt>
 File: imagenes/millon.png Graphic file (type png)
 <use imagenes/millon.png>
-Package pdftex.def Info: imagenes/millon.png  used on input line 215.
+Package pdftex.def Info: imagenes/millon.png  used on input line 221.
 (pdftex.def)             Requested size: 284.52756pt x 195.82275pt.
- [4 <./imagenes/cpus.png> <./imagenes/t100milc.png>]
-<imagenes/merge.png, id=119, 637.38126pt x 545.03625pt>
+<imagenes/merge.png, id=122, 637.38126pt x 545.03625pt>
 File: imagenes/merge.png Graphic file (type png)
 <use imagenes/merge.png>
-Package pdftex.def Info: imagenes/merge.png  used on input line 224.
+Package pdftex.def Info: imagenes/merge.png  used on input line 230.
 (pdftex.def)             Requested size: 284.52756pt x 243.30133pt.
- [5 <./imagenes/millon.png> <./imagenes/merge.png>] (./articulo.bbl
+ [5 <./imagenes/t100milc.png> <./imagenes/millon.png>] [6 <./imagenes/merge.png
+>] (./articulo.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+)) [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (./articulo.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `articulo.out' has not changed.
 (rerunfilecheck)             Checksum: 26D80A3CE60C9A3ED4B1C5058BE29FE4;289.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 18170 strings out of 494385
- 335116 string characters out of 6172919
- 418194 words of memory out of 5000000
- 21459 multiletter control sequences out of 15000+600000
+ 18178 strings out of 494385
+ 335241 string characters out of 6172919
+ 418191 words of memory out of 5000000
+ 21464 multiletter control sequences out of 15000+600000
  17138 words of font info for 50 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  62i,7n,81p,600b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -842,10 +849,10 @@ pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.60
 200.600pk> </home/angel/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
 1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on articulo.pdf (6 pages, 370519 bytes).
+Output written on articulo.pdf (7 pages, 399613 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

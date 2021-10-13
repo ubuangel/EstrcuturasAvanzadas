@@ -20,11 +20,6 @@ Arthur Brunet.
 \newblock \url{https://joaoarthurbm.github.io/eda/posts/selection-sort/}, 2021.
 \newblock [Online; accessed read].
 
-\bibitem{fager}
-Jose Fager.
-\newblock {\em Estructura de datos}.
-\newblock Proyecto Latin. latin, 2014.
-
 \bibitem{shell}
 geekforgeek.
 \newblock {geekforgeek}.
@@ -41,6 +36,14 @@ heapsort.
 insertionsort.
 \newblock {wikipedia}.
 \newblock \url{https://es.wikipedia.org/wiki/Ordenamiento_por_inserci%C3%B3n},
+  2021.
+\newblock [Online; accessed read].
+
+\bibitem{mas}
+Robert~M. Kline.
+\newblock {Comparacion de algoritmos en java}.
+\newblock
+  \url{https://www.cs.wcupa.edu/rkline/ds/shell-comparison.html#comparisons},
   2021.
 \newblock [Online; accessed read].
 
