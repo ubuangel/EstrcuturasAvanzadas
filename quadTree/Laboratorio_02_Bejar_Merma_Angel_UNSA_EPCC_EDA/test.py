@@ -7,7 +7,7 @@ DPI = 72
 
 ancho, altura = 600, 400
 
-N = 1000
+N = 50
 xs = np.random.rand(N) * ancho
 ys = np.random.rand(N) * altura
 puntos = [Punto(xs[i], ys[i]) for i in range(N)]

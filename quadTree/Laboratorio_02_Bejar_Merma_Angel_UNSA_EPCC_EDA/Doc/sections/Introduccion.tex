@@ -1,0 +1,63 @@
+\section{Marco teórico}
+
+
+Un Quadtree es una estructura de datos en la que cada nodo tiene exactamente cuatro hijos ver figura \ref{fig:arbol}.
+
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=13cm]{imagenes/tree.png}
+\caption{arbol quadtree}
+\label{fig:arbol}
+\end{figure}
+
+
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=5cm]{imagenes/cuad.png}
+\caption{ representacion del  mapa }
+\end{figure}
+
+
+ Se construye dividiendo continuamente cada nodo hasta que cada nodo hoja solo tenga un único nodo dentro de él.Los Quadtrees se generalizan como árboles “kd / k-dimensionales” cuando tienes más de 4 divisiones en cada nodo;
+
+Aunque generalmente se usan en dos dimensiones, los quadtrees se pueden emplear a una cantidad arbitraria de dimensiones.Lo mejor de los Quadtree es la "reducción dimensional". En lugar de operar en O ($n^2$) para una   búsqueda lineal común  en dos dimensiones, el Quadtree puede lograr un tiempo cercano a O (log n) para la mayoría de las operaciones.
+
+\begin{figure}[H]%primero aqui sino arriba sino abajo
+\centering
+\includegraphics[width=15cm]{imagenes/quad0.png}
+\caption{mejor representacion  del quadtree}
+\label{fig:repre}
+\end{figure}
+
+En la figura \ref{fig:repre} cada nodo verde representa un rectángulo en un espacio.
+    Cada nodo blanco representa un punto en ese mismo espacio.
+    Los nodos verdes pueden tener hasta cuatro hijos , ya sean blancos o verdes. Estos hijos están contenidos dentro del rectángulo que representa el nodo verde.
+    (Los nodos grises representan espacios vacíos, lugares para nodos hijos  que aún no están ocupados).
+\\    
+\\
+Todas las formas de quadtree comparten las siguientes  características\cite{quad3} :
+  
+    
+\begin{itemize}
+    \item Descomponen el espacio en celdas adaptables.
+    \item  Cada celda (o cuadrante) tiene una capacidad máxima. Cuando se alcanza la capacidad máxima, el cubo se divide
+    \item    El directorio del árbol sigue la descomposición espacial del quadtree. 
+\end{itemize}
+\\
+\\
+ Algunos posibles usos de eso incluyen:
+
+\begin{itemize}
+    \item \textbf{Detección de colisiones:} Normalmente para detectar una colisión, se   compararía todos los puntos contra todos y si  fueran  1000 puntos y ninguno de ellos fuera una colisión se tendría que hacerse 1000*1000 comprobaciones lo que es un desperdicio de tiempo y rendimiento.
+ 
+   Así que aquí entra en acción el  Quadtree, cuando tenga que buscar , dividirá el mapa en cuadrantes y así hará una comprobación por cuadrante ahorrando tiempo y mejorando el costo. Luego, descubrirá en qué cuadrante dentro de ese cuadrante se encuentra y así recursivamente hasta llegar a la colisión.
+
+    En ese sentido solo se tendrá que hacer esto como máximo siete veces para un espacio de 100x100 (asumiendo que los puntos solo pueden tener valores enteros), incluso si hay 1000 puntos en él. Para un espacio de 1,000,000x1,000,000, es un máximo de 20 veces.
+        \item\textbf{ Encontrar al vecino más cercano:} Se tiene un mapa de puntos ,en lugar de preguntarse si alguno de ellos coincide con un punto dado, podrías pensar se cuál es el punto más cercano que tienes a un punto arbitrario entre tus puntos.
+
+
+                    
+\end{itemize}
+

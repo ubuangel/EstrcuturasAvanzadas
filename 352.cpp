@@ -36,7 +36,7 @@ int dfs(int f,int c){
 int main(){
 	
 	
-	input;
+	//input;
 	int casos=0;
 
 	

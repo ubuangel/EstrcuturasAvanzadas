@@ -1,0 +1,31 @@
+\section{Metodologia}
+
+  
+Para una mejor comprensión del funcionamiento del quadtree puede visitar \cite{pagina}.
+En la metodología :     
+
+ \begin{itemize}
+     \item Se probo empleo Python en una plataforma linux y creando un entorno virtual \cite{video}
+     \item  La computadora  que utilizo fue una intel i5 de quinta generación  con 2 cores ,8 gb  de memoria ram.
+     \item  Se creó dos archivos el primero para probar,  test.py donde se importan las funciones definidas en  las clases   del segundo archivo quadtree.py.
+     
+     \item \textit{La estructura de código es el siguiente :}
+Se implementó   tres principales clases: punto ,rectángulo y Quadtree \cite{quadtreepage}.
+En esta última se definieron las funciones más importantes  \textit{insertar} y \textit{consultar rango}.
+Para la primera parte  se crearon puntos de forma aleatoria,
+
+
+     
+ \end{itemize}
+ 
+Para la \textbf{inserción}, primero se  verifica si el nodo dado está dentro de los límites del quadtree actual . Si no es así, dejamos de insertar inmediatamente y si sobre pasa la capacidad llamamos a la función divide para dividir la celda y empezar de nuevo el proceso. Entonces si está dentro de los límites, seleccionamos el hijo apropiado para contener este nodo en función de su ubicación.
+Esta función es O (Log N) donde N es el tamaño de la distancia.
+ 
+
+
+
+
+
+
+
+
